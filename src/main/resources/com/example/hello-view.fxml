@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_interest_balance_calculator.HelloController">
+    <children>
+        <Label text="Mark's Interest Balance Calculator" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+        <GridPane hgap="10" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints valignment="CENTER" />
+            </rowConstraints>
+            <children>
+                <Label text="Initial Deposit:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+                <TextField fx:id="initialDepositField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+                <Label text="Annual Interest Rate:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+                <TextField fx:id="annualInterestRateField" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+                <Label text="Number of Years:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+                <TextField fx:id="yearsField" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+            </children>
+        </GridPane>
+        <Button text="Calculate New Balance" onAction="#onCalculateButtonClick" />
+        <Label text="Balance:" />
+        <Label fx:id="finalBalanceValue" text="$0.00" />
+    </children>
+</VBox>
