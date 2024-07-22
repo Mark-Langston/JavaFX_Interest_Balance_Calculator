@@ -24,5 +24,5 @@ These instructions will get you a copy of the project up and running on your loc
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/javafx-interest-balance-calculator.git
-   cd javafx-interest-balance-calculator
+   git clone https://github.com/Mark-Langston/JavaFX_Interest_Balance_Calculator.git
+   cd JavaFX_Interest_Balance_Calculator
